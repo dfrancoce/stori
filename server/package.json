@@ -1,0 +1,20 @@
+{
+  "name": "stori_server",
+  "subdomain": "stori-server",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "1.0.0-19",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "mongojs": "0.7.x",
+    "socket.io": "0.9.x",
+    "express": "3.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfrancoce/stori.git"
+  }
+}
