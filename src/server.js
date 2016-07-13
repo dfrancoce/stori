@@ -8,17 +8,16 @@ var router = require("./router");
 var app = require('express')(),
 		server = require('http').createServer(app),
 		io = require('socket.io').listen(server),
-		port = 8080,
-		url  = 'http://localhost:' + port + '/';
+		port = 8080;
 
 
-var socket, clients, handler, router;
+var socket, handler, router;
 
 /**
- * Initializes the server
+ * Initializes the src
  *
  * @param handlerManager. Handler with the
- * functions of the server
+ * functions of the src
  */
 function init(handlerManager) {
 	server.listen(port);

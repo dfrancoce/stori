@@ -3,8 +3,8 @@
  * Description: Creates the server and attends the requests
  *******************************************************************************/
 
-var User = require("./User").User;
-var db = require("./db");
+var User = require("./models/User").User;
+var db = require("./db/db");
 
 /**
  * Authenticate the user against the database. If it doesn't

@@ -3,7 +3,7 @@
  * Description: It represents an User
  *******************************************************************************/
 
-var db = require("./db");
+var db = require("./../db/db");
 
 var User = function (emailParam, passwordParam) {
 	var email = emailParam, password = passwordParam, id, room, turn;
