@@ -1,11 +1,10 @@
 var should = require('should');
-var io = require('socket.io-client');
+var io = require('socket.io-client'), server = require('../src/server');
 
 var socketURL = 'http://localhost:8080';
 
 var options ={
-    transports: ['websocket'],
-    'force new connection': true
+    'forceNew': true
 };
 
 var user1 = {'email': 'stannis@gmail.com', 'password': 'T@mY1xz'};
@@ -18,9 +17,11 @@ describe("My Server", function () {
 
         client.on('connect', function () {
             client.emit('authenticateUser', user1, function (data) {
+                console.log(data);
                 data.response.should.equal('OK');
+
                 done();
-            })
+            });
         });
     });
 });

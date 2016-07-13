@@ -5,7 +5,8 @@
 
 var database_url = "db_stori";
 var collections = ["users"];
-var db = require("mongojs").connect(database_url, collections);
+var mongojs = require("mongojs");
+var db = mongojs("127.0.0.1:27017/"+database_url, collections);
 
 /**
  * Returns whether the user exists.

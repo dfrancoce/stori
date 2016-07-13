@@ -30,6 +30,7 @@ function init(handlerManager) {
 
 	handler = handlerManager;
 	setEventHandlers();
+	util.log('Server initialized');
 }
 
 /**
