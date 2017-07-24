@@ -1,6 +1,6 @@
 Stori
 =====
-Node.js + Socket.io server
+Node.js + Socket.io server. It enables the realtime communication between different clients connected to the server.
 
 Requirements
 ============
