@@ -1,10 +1,9 @@
-# Stori_server 
-
+Stori
+=====
 Node.js + Socket.io server
 
-
-# Requirements
-
+Requirements
+============
 The following dependencies need to be installed:
 
 * `npm install express`
